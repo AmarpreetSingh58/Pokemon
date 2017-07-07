@@ -39,7 +39,7 @@ public class PokeAdapter extends RecyclerView.Adapter<PokeAdapter.PokeViewHolder
         holder.name.setText(pokeList.getName());
         holder.weight.setText(pokeList.getWeight());
         holder.height.setText(pokeList.getHeight());
-        Picasso.with(c).load(pokeList.getSprites().front_default).into(holder.imageView);
+        Picasso.with(c).load(pokeList.getSprites().front_default).resize(1000,1000).into(holder.imageView);
 
     }
 
